@@ -1,0 +1,30 @@
+﻿@model ShopQuanAo.Areas.Admin.Models.category
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+  Layout = "_AdminLayout";
+}
+
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Chi tiết danh mục</h4>
+				<form class="forms-sample" asp-controller="categories" asp-action="details">
+					<div class="form-group">
+						<label for="exampleInputUsername1">ID</label>
+						<input type="text" class="form-control" asp-for="Id" placeholder="ID" readonly>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Name</label>
+						<input type="text" class="form-control" asp-for="Name" placeholder="Name" readonly>
+					</div>
+
+					<a class="btn btn-primary mr-2" href="/admin/categories/edit?id=@Model.Id">Sửa</a>
+					<a class="btn btn-dark" href="/admin/categories">Quay lại</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

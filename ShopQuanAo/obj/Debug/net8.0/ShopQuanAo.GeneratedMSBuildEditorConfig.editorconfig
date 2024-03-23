@@ -1,0 +1,287 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ShopQuanAo
+build_property.RootNamespace = ShopQuanAo
+build_property.ProjectDir = D:\HỌC TẬP\HK2_2023-2024 Nam 3\Phát Triển Ứng Dụng Net\ShopQuanAo\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\HỌC TẬP\HK2_2023-2024 Nam 3\Phát Triển Ứng Dụng Net\ShopQuanAo
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/blogs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcYmxvZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/blogs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcYmxvZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/blogs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcYmxvZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/blogs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcYmxvZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/blogs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcYmxvZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/carts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2FydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/carts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2FydHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/carts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2FydHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/carts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2FydHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/carts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2FydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcY2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NccHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NccHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NccHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NccHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NccHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Shared/Components/_Sidebar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NpZGViYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcdXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcdXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcdXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcdXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcdXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/BlogDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Products/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/Components/_Cart/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NhcnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/Components/_ProductQuickViewModal/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Byb2R1Y3RRdWlja1ZpZXdNb2RhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/Components/_SideBar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NpZGVCYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/_HeaderPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/_ProductQuickViewModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0UXVpY2tWaWV3TW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/_SearchResultPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2hSZXN1bHRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shopings/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcGluZ3NcQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shopings/OrderNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcGluZ3NcT3JkZXJOb3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shopings/ShopingCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcGluZ3NcU2hvcGluZ0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Users/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Users/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTXlBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Users/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Users/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-rrjbkmtj2r
+
+[D:/HỌC TẬP/HK2_2023-2024 Nam 3/Phát Triển Ứng Dụng Net/ShopQuanAo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-86bo54ejzk

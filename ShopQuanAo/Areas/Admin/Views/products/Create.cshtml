@@ -1,0 +1,97 @@
+﻿@model ShopQuanAo.Areas.Admin.Models.product
+
+@{
+  ViewData["Title"] = "Create";
+  Layout = "_AdminLayout";
+}
+
+<div class="row">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Thêm sản phẩm mới</h4>
+        <form class="forms-sample" asp-controller="products" asp-action="create" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="exampleInputName1">ID</label>
+            <input type="text" class="form-control" placeholder="ID" readonly>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputName1">Name</label>
+            <input type="text" class="form-control" asp-for="Name" placeholder="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail3">Description</label>
+            <input type="text" class="form-control" asp-for="Description" placeholder="Description">
+          </div>
+
+          <div class="form-group">
+            <label>Image</label>
+            <div class="input-group col-xs-12 form-group">
+              @* <input type="text" class="form-control file-upload-info custom-file-info" placeholder="Upload Image"> *@
+              <input type="text" class="form-control custom-file-info" placeholder="Upload Image">
+              <input type="file" class="custom-file-input file-upload-img" asp-for="Images" name="fileInputs" multiple style="display: none;">
+              <span class="input-group-append">
+                <button class="file-upload-browse btn btn-primary" id="uploadButton" type="button">Upload</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label asp-for="Price">Price</label>
+            <input type="number" class="form-control" asp-for="Price" placeholder="Price">
+          </div>
+          <div class="form-group">
+            <label asp-for="Quantity">Quantity</label>
+            <input type="number" class="form-control" asp-for="Quantity" placeholder="Quantity">
+          </div>
+
+          <div class="form-group">
+            <label asp-for="CategoryId">Category</label>
+            <select class="form-control" asp-for="CategoryId" asp-items="ViewBag.CategoryId">
+            </select>
+          </div>
+          <div class="form-group">
+            <label asp-for="Size">Size</label>
+            <select class="form-control" asp-for="Size" asp-items="ViewBag.Size"></select>
+
+          </div>
+          <div class="form-group">
+            <label asp-for="Color">Color</label>
+            <select class="form-control" asp-for="Color" asp-items="ViewBag.Color">
+            </select>
+          </div>
+          <div class="form-group">
+            <label asp-for="Label">Label</label>
+            <select class="form-control" asp-for="Label" asp-items="ViewBag.Label">
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+          <a class="btn btn-dark" href="/admin/products">Cancel</a>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+@section Scripts {
+  <script>
+    document.querySelector(".custom-file-info").addEventListener("click", () => {
+      document.querySelector(".file-upload-img").click();
+    })
+    document.getElementById("uploadButton").addEventListener("click", function () {
+      // Kích hoạt sự kiện click trên input chứa tệp tin khi nút "Upload" được bấm
+      document.querySelector(".file-upload-img").click();
+    });
+    document.querySelector(".file-upload-img").addEventListener("change", function (e) {
+      var files = e.target.files;
+      var fileName = "";
+      for (var i = 0; i < files.length; i++) {
+        fileName += files[i].name + ", ";
+      }
+      fileName = fileName.slice(0, -2);
+      document.querySelector(".custom-file-info").value = fileName;
+    });
+  </script>
+}

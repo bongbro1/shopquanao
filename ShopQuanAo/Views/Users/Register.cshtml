@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "Đăng ký";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+@model ShopQuanAo.Areas.Admin.Models.user;
+<div class="row w-100 m-0">
+  <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg justify-content-center">
+    <!-- Registration Form Start -->
+    <div class="row justify-content-center wrapper" id="register-box">
+      <div class="col-lg-10 my-auto myShadow">
+        <div class="row">
+          <div class="col-lg-5 d-flex flex-column justify-content-center myColor p-4">
+            <h1 class="text-center font-weight-bold text-white">Welcome to Bong Baby</h1>
+            <hr class="my-4 bg-light myHr" />
+            <p class="text-center font-weight-bolder text-light lead">Để giữ kết nối với chúng tôi xin vui lòng đăng nhập với thông tin cá nhân của bạn.</p>
+            <a href="/users/login" class="btn btn-outline-light btn-lg font-weight-bolder mt-4 align-self-center myLinkBtn" id="login-link">Đăng nhập</a>
+          </div>
+          <div class="col-lg-7 bg-white p-4">
+            <h1 class="text-center font-weight-bold text-primary">Đăng ký tài khoản</h1>
+            @if (ViewBag.Message != null)
+            {
+              if (ViewBag.Status == true)
+              {
+                <div class="alert alert-success" role="alert">
+                  @ViewBag.Message
+                </div>
+              }
+              else
+              {
+                <div class="alert alert-danger" role="alert">
+                  @ViewBag.Message
+                </div>
+              }
+            }
+            @if (Model != null)
+            {
+              <div class="alert alert-success" role="alert">
+                <span>
+                  Đăng ký tài khoản thành công.
+                  <a class="btn btn-primary">Đăng nhập ngay</a>
+                </span>
+              </div>
+            }
+            <hr class="my-3" />
+            <form asp-controller="Users" asp-action="Register" method="post" class="px-3" id="register-form">
+              <div class="input-group input-group-lg form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text rounded-0"><i class="far fa-user fa-lg fa-fw"></i></span>
+                </div>
+                <input type="text" id="name" name="name" class="form-control rounded-0" placeholder="Họ tên" autocomplete="new-password" required />
+              </div>
+              <div class="input-group input-group-lg form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg fa-fw"></i></span>
+                </div>
+                <input type="email" id="remail" name="email" class="form-control rounded-0" placeholder="Email" autocomplete="new-password" required />
+              </div>
+              <div class="input-group input-group-lg form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                </div>
+                <input type="password" id="rpassword" name="password" class="form-control rounded-0" placeholder="Mật khẩu" autocomplete="new-password" required />
+              </div>
+              <div class="input-group input-group-lg form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                </div>
+                <input type="password" id="cpassword" name="repassword" class="form-control rounded-0" placeholder="Nhập lại mật khẩu" autocomplete="new-password" required />
+              </div>
+              <div class="form-group">
+                <div id="passError" class="text-danger font-weight-bolder"></div>
+              </div>
+              <div class="form-group">
+                <button id="register-btn" class="btn btn-primary btn-lg btn-block myBtn">Đăng ký</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+</div>
+<!-- row ends -->

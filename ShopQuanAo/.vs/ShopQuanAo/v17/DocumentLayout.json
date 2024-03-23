@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|d:\\h\u1ECDc t\u1EADp\\hk2_2023-2024 nam 3\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng net\\shopquanao\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|d:\\h\u1ECDc t\u1EADp\\hk2_2023-2024 nam 3\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng net\\shopquanao\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|d:\\h\u1ECDc t\u1EADp\\hk2_2023-2024 nam 3\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng net\\shopquanao\\views\\products\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|solutionrelative:views\\products\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|d:\\h\u1ECDc t\u1EADp\\hk2_2023-2024 nam 3\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng net\\shopquanao\\wwwroot\\js\\module.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|solutionrelative:wwwroot\\js\\module.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|d:\\h\u1ECDc t\u1EADp\\hk2_2023-2024 nam 3\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng net\\shopquanao\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|d:\\h\u1ECDc t\u1EADp\\hk2_2023-2024 nam 3\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng net\\shopquanao\\views\\shared\\_headerpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B066CD3-0768-42C2-86FA-0969612F99A1}|ShopQuanAo.csproj|solutionrelative:views\\shared\\_headerpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 209,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAI8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-22T17:16:03.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_HeaderPartialView.cshtml",
+              "DocumentMoniker": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Shared\\_HeaderPartialView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_HeaderPartialView.cshtml",
+              "ToolTip": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Shared\\_HeaderPartialView.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_HeaderPartialView.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-22T07:14:41.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADoBAAAAAAAAAAAAAEsBAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-22T07:14:40.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "module.js",
+              "DocumentMoniker": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\wwwroot\\js\\module.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\module.js",
+              "ToolTip": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\wwwroot\\js\\module.js",
+              "RelativeToolTip": "wwwroot\\js\\module.js",
+              "ViewState": "AQIAANAAAAAAAAAAAAA2wPIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-22T06:26:39.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shop.cshtml",
+              "DocumentMoniker": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Products\\Shop.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Shop.cshtml",
+              "ToolTip": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Views\\Products\\Shop.cshtml",
+              "RelativeToolTip": "Views\\Products\\Shop.cshtml",
+              "ViewState": "AQIAACwBAAAAAAAAAAAAADYBAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-22T06:26:13.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\H\u1ECCC T\u1EACP\\HK2_2023-2024 Nam 3\\Ph\u00E1t Tri\u1EC3n \u1EE8ng D\u1EE5ng Net\\ShopQuanAo\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAcwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T06:26:09.913Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

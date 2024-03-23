@@ -1,0 +1,128 @@
+﻿@using System.Security.Claims
+@inject ShopQuanAo.Areas.Admin.Controllers.ICartService _cartService;
+@{
+  int userId = 0;
+  if (User.Identity.IsAuthenticated)
+  {
+    userId = int.Parse(User.FindFirstValue("Id"));
+  }
+  int count = _cartService.getCartCountByUserId(userId);
+}
+
+<header class="header-v2">
+  <!-- Header desktop -->
+  <div class="container-menu-desktop trans-03">
+    <div class="wrap-menu-desktop">
+      <nav class="limiter-menu-desktop p-l-45">
+
+        <!-- Logo desktop -->
+        <a href="/" class="logo">
+          <img src="~/images/icons/logo-01.png" alt="IMG-LOGO">
+        </a>
+
+        <!-- Menu desktop -->
+        <div class="menu-desktop">
+          <ul class="main-menu" id="main-menu">
+            <li class="active-menu">
+              <a href="/">Home</a>
+            </li>
+
+            <li>
+              <a href="/products/shop">Shop</a>
+            </li>
+
+            <li class="label1" data-label1="hot">
+              <a href="#">Features</a>
+            </li>
+
+            <li>
+              <a href="/home/blog">Blog</a>
+            </li>
+
+            <li>
+              <a href="/home/about">About</a>
+            </li>
+
+            <li>
+              <a href="/home/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Icon header -->
+        <div class="wrap-icon-header flex-w flex-r-m h-full home">
+          <div class="flex-c-m h-full p-r-24 js-search-form">
+            <div style="position: relative;">
+              <input type="text" class="form-control js-key-search" name="keySearch" placeholder="Tìm kiếm...">
+              <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-btn-close-keySearch" style="position: absolute; top: 50%;right: 0; transform: translate(-3%, -50%); font-size: 20px; opacity: 0.55;">
+                <i class="zmdi zmdi-close"></i>
+              </div>
+            </div>
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-btn-search">
+              <i class="zmdi zmdi-search"></i>
+            </div>
+          </div>
+
+
+          <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="@count">
+              <i class="zmdi zmdi-shopping-cart"></i>
+            </div>
+          </div>
+
+          <div class="flex-c-m h-full p-lr-19">
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
+              <i class="zmdi zmdi-menu"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Header Mobile -->
+  <div class="wrap-header-mobile">
+    <!-- Logo moblie -->
+    <div class="logo-mobile">
+      <a href="index.html"><img src="~/images/icons/logo-01.png" alt="IMG-LOGO"></a>
+    </div>
+
+    <!-- Icon header -->
+    <div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+      <div class="flex-c-m h-full p-r-10">
+        <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11">
+          <i class="zmdi zmdi-search"></i>
+        </div>
+      </div>
+
+      <div class="flex-c-m h-full p-lr-10 bor5">
+        <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="@count">
+          <i class="zmdi zmdi-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button show menu -->
+    <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Modal Search -->
+  <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+    <div class="container-search-header">
+      <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+        <img src="~/images/icons/icon-close2.png" alt="CLOSE">
+      </button>
+
+      <form class="wrap-search-header flex-w p-l-15">
+        <button class="flex-c-m trans-04">
+          <i class="zmdi zmdi-search"></i>
+        </button>
+        <input class="plh3" type="text" name="search" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</header>

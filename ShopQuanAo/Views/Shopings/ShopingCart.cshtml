@@ -1,0 +1,308 @@
+﻿@using System.Security.Claims
+@inject ShopQuanAo.Areas.Admin.Controllers.ICartService _cartService;
+@inject ShopQuanAo.Controllers.IProductService _productService;
+@using cart = ShopQuanAo.Areas.Admin.Models.cart;
+@using product = ShopQuanAo.Areas.Admin.Models.product;
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+	ViewData["Title"] = "Giỏ hàng";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	List <cart> listCart = new List<cart>();
+	product product = new product();
+	if (User.Identity.IsAuthenticated)
+	{
+		int userId = int.Parse(User.FindFirstValue("Id"));
+		listCart = _cartService.getListCartByUserId(userId);
+	}
+	double sumTotalPrice = (double)listCart.Sum(cart => cart.Total);
+}
+<!-- breadcrumb -->
+<div class="container">
+	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+		<a href="/" class="stext-109 cl8 hov-cl1 trans-04">
+			Home
+			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+		</a>
+
+		<span class="stext-109 cl4">
+			Shoping Cart
+		</span>
+	</div>
+</div>
+
+
+<!-- Shoping Cart -->
+<div class="bg0 p-t-75 p-b-85">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
+				<div class="m-l-25 m-r--38 m-lr-0-xl">
+					<div class="wrap-table-shopping-cart">
+						<table class="table-shopping-cart">
+							<tr class="table_head">
+								<th class="column-0">
+									<div class="form-check form-check-primary" style="margin-bottom: 1.2rem;">
+										<input type="checkbox" class="form-check-input js_checkAll"><i class="input-helper"></i>
+									</div>
+								</th>
+								<th class="column-1">Product</th>
+								<th class="column-2"></th>
+								<th class="column-3">Price</th>
+								<th class="column-4">Quantity</th>
+								<th class="column-5">Total</th>
+							</tr>
+							@foreach (var cart in listCart)
+							{
+								product = _productService.getProductById(cart.ProductId);
+								string[] images = product.Images.Split(", ");
+								<tr class="table_row">
+									<td class="column-0">
+										<div class="form-check form-check-primary" style="margin-bottom: 1.2rem;">
+											<input type="checkbox" class="form-check-input"><i class="input-helper"></i>
+										</div>
+									</td>
+									<td class="column-1">
+										<div class="how-itemcart1">
+											<img src="~/images/@images[0]" alt="IMG">
+										</div>
+									</td>
+									<td class="column-2">
+										<p>@product.Name</p>
+										<p>
+											<span>Size: @cart.SizeOrder</span> - 
+											<span>Color: @cart.ColorOrder</span>
+										</p>
+									</td>
+									<td class="column-3 product-price">@String.Format("${0:#,##0.00}", product.Price)</td>
+									<td class="column-4">
+										<div class="wrap-num-product flex-w m-l-auto m-r-0">
+											<input class="cartId" type="hidden" value="@cart.Id" />
+											<input class="productId" type="hidden" value="@product.Id" />
+
+											<div class="btn-minus cl8 hov-btn3 trans-04 flex-c-m">
+												<i class="fs-16 zmdi zmdi-minus"></i>
+											</div>
+
+											<input class="mtext-104 cl3 txt-center num-product" type="number" name="quantityOrder" value="@cart.Quantity">
+
+											<div class="btn-plus cl8 hov-btn3 trans-04 flex-c-m">
+												<i class="fs-16 zmdi zmdi-plus"></i>
+											</div>
+										</div>
+									</td>
+									<td class="column-5 total-price">@String.Format("${0:#,##0.00}", cart.Total)</td>
+								</tr>
+							}
+						</table>
+					</div>
+
+					<div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
+						<div class="flex-w flex-m m-r-20 m-tb-5">
+							<input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text" name="coupon" placeholder="Coupon Code">
+
+							<div class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
+								Apply coupon
+							</div>
+						</div>
+
+						<a href="/shopings/checkout" class="flex-c-m stext-101 cl0 size-118 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+							Checkout
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@section Scripts {
+	<script>
+
+		// Lấy ra tất cả các nút "minus" và "plus"
+		const btnMinusList = document.querySelectorAll('.btn-minus');
+		const btnPlusList = document.querySelectorAll('.btn-plus');
+
+		//Lặp qua tất cả các nút "minus" và thêm sự kiện click cho mỗi nút
+		btnMinusList.forEach(btnMinus => {
+			btnMinus.addEventListener('click', function () {
+				console.log(this)
+				// Lấy ra ô input tương ứng
+				const input = btnMinus.closest('.wrap-num-product').querySelector('.num-product');
+				console.log(input);
+				let currentValue = parseInt(input.value);
+				// Giảm giá trị đi 1, nhưng không cho phép giá trị nhỏ hơn 1
+				if (currentValue > 1) {
+					currentValue--;
+				}
+				// Cập nhật giá trị mới vào input
+				input.value = currentValue;
+				input.dispatchEvent(new Event('input'));
+
+				const productId = input.closest('.wrap-num-product').querySelector('.productId').value;
+				const cartId = input.closest('.wrap-num-product').querySelector('.cartId').value;
+				// Gửi AJAX request
+				$.ajax({
+					type: "POST",
+					url: "/Shopings/UpdateCart",
+					data: { cartId: cartId, productId: productId, quantity: -1 },
+					success: function (response) {
+					},
+					error: function (xhr, status, error) {
+						// Xử lý lỗi nếu cần thiết
+					}
+				});
+
+			});
+		});
+
+		// Lặp qua tất cả các nút "plus" và thêm sự kiện click cho mỗi nút
+		btnPlusList.forEach(btnPlus => {
+			btnPlus.addEventListener('click', function () {
+				// Lấy ra ô input tương ứng
+				const input = btnPlus.closest('.wrap-num-product').querySelector('.num-product');
+				console.log(input);
+				// Lấy giá trị hiện tại của input
+				let currentValue = parseInt(input.value);
+				// Tăng giá trị lên 1
+				currentValue++;
+				// Cập nhật giá trị mới vào input
+				input.value = currentValue;
+				input.dispatchEvent(new Event('input'));
+
+				const productId = input.closest('.table_row').querySelector('.productId').value;
+				const cartId = input.closest('.table_row').querySelector('.cartId').value;
+				// Gửi AJAX request
+				$.ajax({
+					type: "POST",
+					url: "/Shopings/UpdateCart",
+					data: { cartId: cartId, productId: productId, quantity: 1 },
+					success: function (response) {
+					},
+					error: function (xhr, status, error) {
+						// Xử lý lỗi nếu cần thiết
+					}
+				});
+
+			});
+		});
+
+		// Cập nhật giá trị total
+		const inputList = document.querySelectorAll('.num-product');
+		// Lặp qua tất cả các ô input và thêm sự kiện input cho mỗi ô
+		inputList.forEach(input => {
+			input.addEventListener('input', function () {
+				// Lấy ra giá trị của sản phẩm
+				const productPrice = parseFloat(input.closest('tr').querySelector('.product-price').textContent.replace('$', '').replace(',', ''));
+				// Lấy ra giá trị của số lượng từ ô input
+				const quantity = parseInt(input.value);
+				// Tính toán giá trị mới của sản phẩm dựa trên số lượng và giá
+				const totalPrice = productPrice * quantity;
+				// Lấy ra ô td tương ứng với giá trị mới
+				const totalPriceTd = input.closest('tr').querySelector('.total-price');
+
+				// Cập nhật giá trị của ô td
+				totalPriceTd.textContent = `$${totalPrice.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
+			});
+			input.addEventListener('change', () => {
+				const productId = input.closest('.table_row').querySelector('.productId').value;
+				const cartId = input.closest('.table_row').querySelector('.cartId').value;
+				const quantity = input.value;
+				$.ajax({
+					type: "POST",
+					url: "/Shopings/UpdateCart",
+					data: { cartId: cartId, productId: productId, quantity: quantity, type: "WriteQuantity" },
+					success: function (response) {
+					},
+					error: function (xhr, status, error) {
+						// Xử lý lỗi nếu cần thiết
+					}
+				});
+			});
+		});
+
+
+		//THỰC HIỆN TRÊN CÁC CART ĐƯỢC CHECKED
+		// reset list sau mỗi lần mở trình duyệt
+		let cartIdList = [];
+		// Lấy danh sách tất cả các checkbox trong bảng
+		const checkboxes = document.querySelectorAll('.table_row input[type="checkbox"]');
+		var checkBoxAll = document.querySelector('.js_checkAll');
+		checkBoxAll.addEventListener('click', function () {
+			checkboxes.forEach((item) => {
+				// Đặt trạng thái của các checkbox khác bằng với trạng thái của checkbox "check all"
+				item.checked = checkBoxAll.checked;
+			});
+		});
+
+		// Đặt tất cả các checkbox về trạng thái không được chọn khi backtrack từ trang checkout
+		window.addEventListener('pageshow', function (event) {
+			var historyTraversal = event.persisted ||
+				(typeof window.performance != 'undefined' &&
+					window.performance.navigation.type === 2);
+			if (historyTraversal) {
+				var cartIdListJson = JSON.stringify(cartIdList);
+
+				// Sử dụng Ajax để gửi dữ liệu lên server-side
+				axios.post('/save-cart-ids', {
+					cartIdList: cartIdListJson
+				})
+				.then(function (response) {
+				})
+				.catch(function (error) {
+					console.error(error);
+				});
+				// Nếu trang được tải lại từ lịch sử duyệt, hãy đặt lại trạng thái của các checkbox
+				checkboxes.forEach(function (checkbox) {
+					checkbox.checked = false;
+				});
+			}
+		});
+		// Lắng nghe sự kiện click trên mỗi checkbox
+		checkboxes.forEach(function (checkbox) {
+			checkbox.addEventListener('change', function () {
+				// Kiểm tra xem checkbox có được chọn hay không
+				const cartId = this.closest('.table_row').querySelector('.cartId').value;
+				if (this.checked) {
+					// Nếu được chọn, lưu lại thông tin của cart vào một cấu trúc dữ liệu như mảng
+					cartIdList.push(cartId);
+				} else {
+					let indexToRemove = cartIdList.indexOf(cartId);
+
+					// Kiểm tra xem chuỗi có tồn tại trong mảng không
+					if (indexToRemove !== -1) {
+						// Sử dụng phương thức splice() để xóa chuỗi
+						cartIdList.splice(indexToRemove, 1);
+					}
+				}
+				// Chuyển danh sách ID cart được chọn thành chuỗi JSON phục vụ cho việc checkout
+				var cartIdListJson = JSON.stringify(cartIdList);
+
+				// Sử dụng Ajax để gửi dữ liệu lên server-side
+				axios.post('/save-cart-ids', {
+					cartIdList: cartIdListJson
+				})
+				.then(function (response) {
+				})
+				.catch(function (error) {
+					console.error(error);
+				});
+			});
+		});
+	</script>
+}
+<style>
+	.btn-minus, .btn-plus {
+		width: 45px;
+		height: 100%;
+		cursor: pointer;
+	}
+
+	.table-shopping-cart .column-0 {
+		width: 28px;
+		padding-left: 50px;
+	}
+</style>

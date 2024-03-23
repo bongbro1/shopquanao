@@ -1,0 +1,17 @@
+﻿.form-control[readonly] {
+	background-color: #e9ecef !important;
+	opacity: 0.5 !important;
+	color: #000 !important;
+}
+
+.form-control[readonly]:focus {
+	color: #000 !important;
+}
+
+.form-control:focus {
+	color: #fff !important;
+}
+
+.btn.btn-fw {
+	min-width: 100px !important;
+}

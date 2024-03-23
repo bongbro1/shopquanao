@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ShopQuanAo.Areas.Admin.Models.product>
+
+@{
+    ViewData["Title"] = "Index";
+  Layout = "_AdminLayout";
+}
+
+<div class="card">
+	<div class="card-body">
+		<h4 class="card-title">Danh sách sản phẩm</h4>
+		<p class="card-description">
+			<div class="table-responsive">
+				<table class="table table-dark">
+					<thead>
+						<tr>
+							<th> STT </th>
+							<th> Tên sản phẩm </th>
+							<th> Mô tả </th>
+							<th> Hình ảnh </th>
+							<th> Giá </th>
+							<th> Số lượng </th>
+							<th> Danh mục </th>
+							<th> Kích cỡ </th>
+							<th> Màu sắc </th>
+							<th> Label </th>
+							<th> # </th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td> @item.Id </td>
+								<td> @item.Name </td>
+								<td>
+									@{
+										// Kiểm tra xem mô tả có null hay không trước khi cắt chuỗi
+										if (!string.IsNullOrEmpty(item.Description) && item.Description.Split(" ").Length > 10)
+										{
+											// Chia chuỗi mô tả thành từng từ
+											var words = item.Description.Split(' ');
+											// Lấy 20 từ từ mô tả
+											var shortDescription = string.Join(" ", words.Take(12));
+											// Chia thành 2 dòng
+											var halfLength = shortDescription.Length / 2;
+											var firstHalf = shortDescription.Substring(0, halfLength);
+											var secondHalf = shortDescription.Substring(halfLength);
+											// Hiển thị từng dòng mô tả
+											<div>@firstHalf</div>
+											<span>@secondHalf</span>
+											if (item.Description.Length > shortDescription.Length)
+											{
+												<text>...</text>
+											}
+										}
+										else
+										{
+											<div>@item.Description</div>
+										}
+									}
+								</td>
+								<td> @item.Images </td>
+								<td> @item.Price </td>
+								<td> @item.Quantity </td>
+								<td> @item.category?.Name </td>
+								<td> @item.Size </td>
+								<td> @item.Color </td>
+								<td> @item.Label </td>
+								<td>
+									<a class="btn btn-success btn-fw" href="/admin/products/edit/?id=@item.Id">Sửa</a>
+									<a class="btn btn-info btn-fw" href="/admin/products/edit/?id=@item.Id">Xem</a>
+									<a class="btn btn-danger btn-fw" href="/admin/products/delete/?id=@item.Id">Xóa</a>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+				
+			</div>
+	</div>
+</div>
+<div style="margin-top: 20px;">
+	<a class="btn btn-outline-primary btn-fw" href="/admin/products/create">Thêm mới</a>
+</div>

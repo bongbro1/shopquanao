@@ -1,0 +1,55 @@
+﻿
+@inject ShopQuanAo.Controllers.IUserService _userService;
+@model IEnumerable<ShopQuanAo.Models.Order>
+
+@{
+	ViewData["Title"] = "Danh sách đơn đặt hàng";
+	Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card">
+	<div class="card-body">
+		<h4 class="card-title">Danh sách đơn đặt hàng</h4>
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+						<th> Order No </th>
+						<th> Client Name </th>
+						<th> Product Cost </th>
+						<th> Order Date </th>
+						<th> Approval Date </th>
+						<th> Order Status </th>
+						<th> # </th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						var user = _userService.getUserByUserId(item.User_Id);
+						<tr>
+							<td> #@item.Id.ToString("0000") </td>
+							<td>
+								<img src="~/AdminAssets/images/faces/face1.jpg" alt="image">
+								<span class="pl-2">@user.Name</span>
+							</td>
+							<td> @String.Format("${0:#,##0.00}", item.totalPrice) </td>
+							<td> @item.order_date.ToString("yyyy/MM/dd hh:mm:ss") </td>
+							<td> @item.order_approval?.ToString("yyyy/MM/dd hh:mm:ss") </td>
+							<td>
+								@if(item.Status == true)
+								{
+									<div class="badge badge-outline-success">Đã duyệt</div>
+								}
+								else
+								{
+									<div class="badge badge-outline-warning">Đang chờ</div>
+								}
+							</td>
+							<td> <a href="/admin/orders/details?id=@item.Id" class="btn btn-inverse-success btn-fw">Xem thông tin</a> </td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
